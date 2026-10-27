@@ -1,0 +1,220 @@
+/* Configurações Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #111116; /* Fundo escuro para destacar o tema */
+    color: #f5f5f5;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Cabeçalho estilizado com Vermelho Homem-Aranha */
+header {
+    background-color: #d11919;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #0044ff; /* Detalhe em azul */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #002288; /* Azul clássico */
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Amarelo de destaque ao passar o mouse */
+}
+
+/* Container de Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* Área de Conteúdo Principal */
+main {
+    flex: 3;
+    min-width: 300px;
+}
+
+section {
+    background-color: #1c1c24;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333344;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #d11919;
+    border-bottom: 2px solid #0044ff;
+    padding-bottom: 10px;
+}
+
+/* Grid de Produtos (Vitrine) */
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Cards dos Produtos */
+.produto-card {
+    background-color: #252530;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #3c3c50;
+}
+
+.produto-imagem {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: #1c1c24;
+    padding: 30px;
+    border-radius: 5px;
+}
+/* Procure por este bloco no seu style.css e substitua por este: */
+section {
+    background-color: transparent; /* Remove o fundo do quadrado grande */
+    padding: 0;                   /* Remove o espaçamento interno */
+    border-radius: 0;
+    border: none;                 /* Remove a borda do quadrado grande */
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 30px;          /* Aumenta o espaço abaixo do título */
+    color: #d11919;
+    border-bottom: 2px solid #0044ff;
+    padding-bottom: 10px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.produto-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.btn-comprar {
+    background-color: #d11919;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #a01010;
+}
+
+/* Barra Lateral */
+aside {
+    flex: 1;
+    min-width: 250px;
+    background-color: #001144;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #002288;
+    height: fit-content;
+}
+
+aside h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+aside p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.cupom {
+    background-color: #d11919;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0f;
+    color: #777788;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #222233;
+    font-size: 0.85rem;
+}
+
+/* Responsividade Básica para Telas Menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}                                    
